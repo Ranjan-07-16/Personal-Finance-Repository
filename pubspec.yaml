@@ -1,0 +1,31 @@
+name: personal_finance
+description: A personal finance tracker app for managing income and expenses.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local database – used in lib/db/db_helper.dart
+  sqflite: ^2.3.3
+  path: ^1.9.0
+
+  # State management – planned per README design doc
+  flutter_riverpod: ^2.5.1
+
+  # Lightweight key-value settings – planned per README design doc
+  shared_preferences: ^2.3.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
